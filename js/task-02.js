@@ -6,3 +6,6 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+const ingredientsList = document.querySelector('#ingredients');
+const output = ingredients.map((ingredients) => `<li class="item">${ingredients}</li>`).join("");
+ingredientsList.innerHTML = output;
