@@ -1,11 +1,14 @@
 const ingredients = [
-  'Potatoes',
-  'Mushrooms',
-  'Garlic',
-  'Tomatos',
-  'Herbs',
-  'Condiments',
+  "Potatoes",
+  "Mushrooms",
+  "Garlic",
+  "Tomatos",
+  "Herbs",
+  "Condiments",
 ];
-const ingredientsList = document.querySelector('#ingredients');
-const output = ingredients.map((ingredients) => `<li class="item">${ingredients}</li>`).join("");
-ingredientsList.innerHTML = output;
+const list = document.getElementById("ingredients");
+const bbb = ingredients.forEach((element) => { 
+  const bb = document.createElement("li"); 
+  bb.textContent = element;
+  list.append(bb); 
+})
